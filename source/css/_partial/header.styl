@@ -14,7 +14,7 @@
   &:after
     bottom: 0
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.2))
-
+		
 #header-outer
   height: 100%
   position: relative
@@ -33,6 +33,12 @@
   background-size: cover
   z-index: -1
 
+if banner-2x-url
+	#banner
+		@media mq-retina
+			background: url(banner-2x-url) center #000
+			background-size: cover;
+			
 #header-title
   text-align: center
   height: logo-size
