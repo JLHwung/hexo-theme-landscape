@@ -17,6 +17,25 @@ else
       list-style: disc
     ol
       list-style: decimal
+.widget-title
+  &:before
+    font-family font-icon
+    padding-right 8px
+  &.archive
+    &:before
+      content '\f187'
+  &.category
+    &:before
+      content '\f07b'
+  &.recent_posts
+    &:before
+      content '\f017'
+  &.tag
+    &:before
+      content '\f02b'
+  &.tagcloud
+    &:before
+      content '\f0c2'
 
 .category-list-count
 .tag-list-count
