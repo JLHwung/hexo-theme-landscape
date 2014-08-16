@@ -65,14 +65,23 @@
       color: #fff
   .prev
     float: left
+    line-height: 16px
+    &:before
+      font-family: font-icon
+      content: '\f100'
+      padding-right: 8px
   .next
     float: right
+    line-height: 16px
+    &:after
+      font-family: font-icon
+      content: '\f101'
+      padding-left: 8px
   .page-number
     display: inline-block
     @media mq-mobile
       display: none
   .current
     color: color-default
-    font-weight: bold
   .space
     color: color-border
