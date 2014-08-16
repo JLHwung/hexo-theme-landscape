@@ -1,18 +1,18 @@
 # Landscape
 
-A brand new default theme for [Hexo].
+A ported theme from the default theme for [Hexo] featured i18 support and more refined subtlety.
 
-- [Preview](http://zespia.tw/hexo-theme-landscape/)
+- [Preview](https://jhuang.me/)
 
 ## Installation
 
 ### Install
 
 ``` bash
-$ git clone https://github.com/tommy351/hexo-theme-landscape.git themes/landscape
+git clone https://github.com/JLHwung/hexo-theme-landscape.git themes/landscape
 ```
 
-**Landscape requires Hexo 2.4 and above.**
+**Landscape requires Hexo 2.5.7 and above.**
 
 ### Enable
 
@@ -52,6 +52,8 @@ google_analytics:
 favicon: /favicon.png
 twitter:
 google_plus:
+fb_admins:
+fb_app_id:
 ```
 
 - **menu** - Navigation menu
@@ -64,6 +66,8 @@ google_plus:
 - **favicon** - Favicon path
 - **twitter** - Twiiter ID
 - **google_plus** - Google+ ID
+- **fb_admins** - Facebook Open Graph admin setting
+- **fb_app_id** - Facebook Open Graph Application ID
 
 ## Features
 
@@ -96,7 +100,7 @@ All of them are enabled by default. You can edit them in `widget` setting.
 ### Requirements
 
 - [Grunt] 0.4+
-- Hexo 2.4+
+- Hexo 2.5.7+
 
 ### Grunt tasks
 
