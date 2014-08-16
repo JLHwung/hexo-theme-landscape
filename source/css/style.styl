@@ -13,14 +13,16 @@ input, button
     padding: 0
 
 @font-face
-  font-family: FontAwesome
+  font-family: font-icon
   font-style: normal
   font-weight: normal
-  src: url(font-icon-path + ".eot?v=#" + font-icon-version)
-  src: url(font-icon-path + ".eot?#iefix&v=#" + font-icon-version) format("embedded-opentype"),
-       url(font-icon-path + ".woff?v=#" + font-icon-version) format("woff"),
-       url(font-icon-path + ".ttf?v=#" + font-icon-version) format("truetype"),
-       url(font-icon-path + ".svg#fontawesomeregular?v=#" + font-icon-version) format("svg")
+  src: local(font-icon-osx), local(font-icon-win), url(font-icon-path + ".woff")
+
+@font-face
+  font-family: font-source
+  font-style: normal
+  font-weight: normal
+  src: local(font-source-osx), local(font-source-win), url(font-source-path + ".woff")
 
 html, body, #container
   height: 100%
@@ -28,6 +30,7 @@ html, body, #container
 body
   background: color-background
   font: font-size font-sans
+  -webkit-text-size-adjust: 100%
 
 .outer
   clearfix()
