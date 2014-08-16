@@ -78,10 +78,27 @@
     border-bottom: 1px solid color-border
     padding: 10px 0
   blockquote
+    position: relative
+    margin: line-height article-padding
+    border: 1px solid color-border
+    border-left: 4px solid color-border
+    padding: 0 article-padding
     font-family: font-serif
-    font-size: 1.4em
-    margin: line-height 20px
-    text-align: center
+    font-size: font-size
+    text-align: left
+    @media mq-normal
+      margin-left: 40px
+    &:before
+      content: "\f10d"
+      position: absolute
+      left: -2*article-padding
+      top: .5*line-height
+      width: 25px
+      height: 25px
+      font-size: 25px
+      font-family: FontAwesome
+      text-align:center
+      color: color-border
     footer
       font-size: font-size
       margin: line-height 0
