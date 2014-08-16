@@ -56,6 +56,8 @@
   color: color-grey
   overflow: hidden
   a, span
+    line-height: font-size
+    height: 18px
     padding: 10px 20px
   a
     color: color-grey
@@ -65,14 +67,12 @@
       color: #fff
   .prev
     float: left
-    line-height: 16px
     &:before
       font-family: font-icon
       content: '\f100'
       padding-right: 8px
   .next
     float: right
-    line-height: 16px
     &:after
       font-family: font-icon
       content: '\f101'
@@ -83,5 +83,6 @@
       display: none
   .current
     color: color-default
+    font-weight: bold;
   .space
     color: color-border
