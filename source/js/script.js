@@ -135,33 +135,4 @@
 
     $container.removeClass('mobile-nav-on');
   });
-
-//    auto scroll to skip header
-    var skipHeight = parseInt($('#header').css('height')),
-        lastScrollTop = 0,
-  		$window = $(window),
-        scrollHandler = function () {
-            var $body = $('body'),
-                scrollTop = $body.scrollTop();
-            if (scrollTop < skipHeight) {
-                if (scrollTop > lastScrollTop) {
-                    $window.off('scroll', scrollHandler)
-                    $body.animate({scrollTop: skipHeight}, 'slow', 'linear', function () {
-                        $window.on('scroll', scrollHandler)
-                        lastScrollTop = skipHeight;
-                    })
-                } else {
-                    $window.off('scroll', scrollHandler)
-                    $body.animate({scrollTop: 0}, 'slow', 'linear', function () {
-                        $window.on('scroll', scrollHandler)
-                        lastScrollTop = 0;
-                    })
-                }
-            } else {
-                lastScrollTop = scrollTop;
-            }
-        }
-
-    $window.on('scroll', scrollHandler)
-
 })(jQuery);
