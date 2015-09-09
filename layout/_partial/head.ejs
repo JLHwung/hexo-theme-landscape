@@ -29,9 +29,6 @@
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
-  <% if (theme.fancybox){ %>
-    <link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
-  <% } %>
   <%- css('css/style') %>
     <% if (url_for(page.path) == '/index.html') {%>
     <style>#header {height: 100%}</style>
