@@ -24,6 +24,14 @@
   @extend $block
   padding: 10px
   margin-bottom: 15px
+  position: relative
+  &:after
+    content: ""
+    bottom: 0
+    right: 0
+    position: absolute
+    border-bottom: 13px solid color-background
+    border-left: 17px solid transparent
 
 .archive-article-title
   text-decoration: none
@@ -52,6 +60,15 @@
   text-align: center
   color: color-grey
   overflow: hidden
+  position: relative;
+  &:after
+    content: ""
+    bottom: 0
+    right: 0
+    position: absolute
+    border-bottom: 25px solid color-background
+    border-left: 32px solid transparent
+    
   a, span
     line-height: 1
     height: 2ex;
@@ -65,13 +82,13 @@
       background: color-grey
       color: #fff
   .prev
-    float: left
+    padding-right: 40px
     &:before
       font-family: font-icon
       content: '\f100'
       padding-right: 8px
   .next
-    float: right
+    padding-left: 40px
     &:after
       font-family: font-icon
       content: '\f101'

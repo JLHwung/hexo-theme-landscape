@@ -4,6 +4,14 @@
 .article-inner
   @extend $block
   overflow: hidden
+  position: relative;
+  &:after
+    content: ""
+    bottom: 0
+    right: 0
+    position: absolute
+    border-bottom: 25px solid color-background
+    border-left: 32px solid transparent
 
 .article-meta
   clearfix()
