@@ -33,8 +33,8 @@
     <link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
   <% } %>
   <%- css('css/style') %>
-    <% if (is_home()) {%>
-    <style>#header {height: 100%}</style>
+    <% if (url_for(page.path) == '/index.html') {%>
+  <%- css('css/head-index-extra') %>
     <% }%>
   <%- partial('google-analytics') %>
 </head>
