@@ -1,0 +1,50 @@
+#header {
+    height: 100%
+}
+
+#banner {
+    animation-name: background-scale;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes background-scale {
+    from {
+        transform: scale(1.5, 1.5);
+    }
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+#header-title {
+    animation-name: title-scale;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes title-scale {
+    from {
+        transform: scale(.666, .666);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+#header-inner {
+    animation-name: header-translateY;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes header-translateY {
+    from {
+        transform: translateY(-20px)
+    }
+    to {
+        transform: translateY(0)
+    }
+}

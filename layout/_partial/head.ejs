@@ -31,13 +31,7 @@
   <% } %>
   <%- css('css/style') %>
     <% if (url_for(page.path) == '/index.html') {%>
-    <style>
-      #header {height: 100%}
-      #banner{animation-name: background-scale; animation-duration:1.3s;animation-timing-function:ease-out;}
-      @keyframes background-scale {from {transform:scale(1.5,1.5);} to {transform:scale(1,1);}}
-      #header-title{animation-name:title-scale;animation-duration:1.3s;animation-timing-function:ease-out;}
-      @keyframes title-scale {from{transform:scale(.666,.666);opacity:0;} to{transform:scale(1,1);opacity:1;}}
-    </style>
+  <%- css('css/head-index-extra') %>
     <% }%>
   <%- partial('google-analytics') %>
 </head>
