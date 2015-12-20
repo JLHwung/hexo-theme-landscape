@@ -1,20 +1,10 @@
 #header {
     height: 100%
 }
-
-#banner {
-    animation-name: background-scale;
-    animation-duration: 1.3s;
-    animation-timing-function: ease-out;
-}
-
-@keyframes background-scale {
-    from {
-        transform: scale(1.5, 1.5);
-    }
-    to {
-        transform: scale(1, 1);
-    }
+#header-title, #header-inner {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
 }
 
 #header-title {
