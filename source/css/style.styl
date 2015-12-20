@@ -33,11 +33,15 @@ body
   text-size-adjust: 100%
   text-rendering: optimizeLegibility;
 
+outer-width = (column-width + gutter-width) * columns + gutter-width;
 .outer
   clearfix()
-  max-width: (column-width + gutter-width) * columns + gutter-width
+  max-width: outer-width
   margin: 0 auto
   padding: 0 gutter-width
+  @media (max-width: outer-width) {
+    padding: 0 0
+  }
 
 .inner
   column(columns)
