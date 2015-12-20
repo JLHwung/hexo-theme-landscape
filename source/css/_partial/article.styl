@@ -77,6 +77,7 @@
     width: 100%
     border-collapse: collapse
     border-spacing: 0
+    table-layout: fixed
   th
     font-weight: bold
     border-bottom: 3px solid color-border
@@ -84,6 +85,7 @@
   td
     border-bottom: 1px solid color-border
     padding: 10px 0
+    word-break: break-all
   blockquote
     position: relative
     margin: line-height article-padding
@@ -333,7 +335,7 @@ $article-share-link
   &:hover
     background: color-weibo
     text-shadow: 0 1px darken(color-weibo, 20%)
-    
+
 .article-gallery
   background: #000
   position: relative
